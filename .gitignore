@@ -47,6 +47,16 @@ beMTPL16.rda
 .DS_Store
 Thumbs.db
 
-# MLflow (for future use)
+# MLflow
 mlruns/
 .mlflow/
+
+# Environment variables
+.env
+.env.local
+
+# Model artifacts and backups
+best_model_backup/
+hf_upload_temp/
+*.pkl
+
