@@ -1,57 +1,47 @@
-# Insurance Claim Predictor App
+# 🚗 Insurance Claim Predictor App
 
-A simple web app that predicts how much an insurance claim might cost. Just enter some details about the policy and vehicle, and it'll give you an estimate in euros.
+Interactive web application for predicting Belgian motor insurance claim severity.
 
-## Getting Started
+## Quick Start
 
-### Step 1: Train the Model First
-
-Before you can use this app, you need to train the model. Go back to the main folder and run the `ml_belgium.ipynb` notebook. This will create the model files you need.
-
-### Step 2: Install What You Need
-
-Open a terminal in this folder and run:
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-This installs Streamlit and other tools the app needs.
-
-### Step 3: Run the App
-
-Still in the terminal, type:
+### 2. Run the App
 
 ```bash
 streamlit run app.py
 ```
 
-A browser window should open automatically showing the app. If it doesn't, go to `http://localhost:8501` in your browser.
+The app opens at `http://localhost:8501`
 
-## How to Use
+## How It Works
 
-1. Fill out the form with policy and vehicle information
-2. Click the "Predict Claim Severity" button
-3. See your prediction in euros!
+1. **Load Artifacts**: Downloads model, preprocessor, and categories from [Hugging Face Hub](https://huggingface.co/charlesnanakwakye/belgian-mtpl-claim-severity)
+2. **User Input**: Collect policy and vehicle information via web form
+3. **Preprocess**: Transform inputs using the same pipeline from training
+4. **Predict**: Generate claim severity estimate in EUR
 
-That's it. Pretty simple, right?
+## Features
 
-## What the App Needs
+- 🎯 Real-time predictions
+- 📊 Input validation and error handling
+- 🔄 Cached model loading for fast responses
+- 📱 Responsive design (works on mobile)
 
-The app looks for two files in the `best_model_backup` folder (one level up from here):
-- `best_model.pkl` - The trained model
-- `preprocessor.pkl` - The data preparation pipeline
+## Requirements
 
-If you see an error saying these files are missing, make sure you've run the notebook first.
+- Python 3.10+
+- Internet connection (to download model from HF Hub)
+- See `requirements.txt` for dependencies
 
-## Want to Share It Online?
+## Deploy to Streamlit Cloud
 
-You can put this on Streamlit Cloud for free:
+1. Push to GitHub
+2. Connect repo at [share.streamlit.io](https://share.streamlit.io)
+3. Deploy with one click
 
-1. Push your code to GitHub
-2. Go to [streamlit.io/cloud](https://streamlit.io/cloud) and sign up
-3. Connect your GitHub repo
-4. Set the working directory to `streamlit_app`
-5. Click deploy!
-
-Now anyone with the link can use your app.
+No secrets needed - model is public on Hugging Face.

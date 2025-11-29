@@ -32,9 +32,9 @@ MANIFEST
 .ipynb_checkpoints
 *.ipynb_checkpoints
 
-# Data files
+# Data files (cached datasets)
+data/
 *.rda
-beMTPL16.rda
 
 # IDE
 .vscode/
@@ -47,7 +47,7 @@ beMTPL16.rda
 .DS_Store
 Thumbs.db
 
-# MLflow
+# MLflow (experiment tracking)
 mlruns/
 .mlflow/
 
@@ -55,8 +55,13 @@ mlruns/
 .env
 .env.local
 
-# Model artifacts and backups
-best_model_backup/
+# Temporary upload directory
 hf_upload_temp/
+
+# Hugging Face cache (auto-regenerated)
+hf_cache/
+**/hf_cache/
+
+# Model artifacts
 *.pkl
 
