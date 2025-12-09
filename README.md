@@ -267,22 +267,17 @@ For **individual claim predictions**, Random Forest achieves the lowest MAPE (Me
 
 ### Comparison Results
 
-| Model | RMSE (EUR) | MAPE (%) | Training Time |
-|-------|------------|----------|---------------|
-| Linear Regression | X,XXX | XX.X% | < 1s |
-| Ridge Regression | X,XXX | XX.X% | < 1s |
-| Lasso Regression | X,XXX | XX.X% | < 1s |
-| **Random Forest** | **X,XXX** | **XX.X%** | ~30s |
-| XGBoost (Basic) | X,XXX | XX.X% | ~5s |
-| XGBoost (Tuned) | X,XXX | XX.X% | ~60s |
-| Actuarial XGBoost | X,XXX | XX.X% | ~10s |
+| Model | RMSE (EUR) | MAPE (%) |
+|-------|------------|----------|
+| Linear Regression | €24,615 | 59.86% |
+| Ridge Regression | €24,614 | 59.86% |
+| Lasso Regression | €19,099 | 63.02% |
+| **Random Forest** | **€12,802** | **40.53%** |
+| XGBoost (Basic) | €12,774 | 40.53% |
+| XGBoost (Tuned) | €12,817 | 40.82% |
+| Actuarial XGBoost | €12,720 | 49.99% |
 
-> *Best model selected by lowest MAPE for individual claim accuracy. Run the notebook to see actual metrics logged in MLflow*
-
-### Feature Importance
-
-<!-- Add screenshot of feature importance chart here -->
-![Feature Importance](screenshots/feature_importance.png)
+> *Best model selected by lowest MAPE for individual claim accuracy. View detailed metrics in MLflow dashboard.*
 
 ---
 
