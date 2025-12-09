@@ -1,7 +1,7 @@
 # Belgian Motor Insurance Claim Severity Prediction
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)](https://streamlit.io)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)](https://belgian-mtpl-claim-severity.streamlit.app/)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model-yellow.svg)](https://huggingface.co/charlesnanakwakye/belgian-mtpl-claim-severity)
 [![MLflow](https://img.shields.io/badge/MLflow-Tracking-0194E2.svg)](https://mlflow.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E.svg)](https://scikit-learn.org)
@@ -369,15 +369,13 @@ cp .env.example .env
 
 ### ML Notebook - Model Training
 
-<!-- Add screenshot here -->
-![Notebook Training](screenshots/notebook_training.png)
+![Notebook Training](screenshots/notebook_screenshot.png)
 
 *Training 7 different models with MLflow tracking*
 
 ### MLflow - Experiment Tracking
 
-<!-- Add screenshot here -->
-![MLflow Dashboard](screenshots/mlflow_dashboard.png)
+![MLflow Experiments](screenshots/mlflow_experiments.png)
 
 *Compare model performance across experiments*
 
@@ -390,8 +388,7 @@ cp .env.example .env
 
 ### Hugging Face - Model Registry
 
-<!-- Add screenshot here -->
-![Hugging Face Hub](screenshots/huggingface_hub.png)
+![Hugging Face Hub](screenshots/huggingface_model_registry_screenshot.png)
 
 *Versioned model storage with artifact browser*
 
