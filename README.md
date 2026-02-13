@@ -376,7 +376,6 @@ cp .env.example .env
 
 ### Streamlit App - Prediction Interface
 
-<!-- Add screenshot here -->
 ![Streamlit App](screenshots/streamlit_app_interface.png)
 
 *User-friendly interface for claim severity predictions*
